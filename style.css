@@ -1,0 +1,56 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background: #080b18;
+  color: white;
+  font-family: monospace;
+  height: 100vh;
+}
+
+#batCanvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  image-rendering: pixelated;
+  cursor: crosshair;
+}
+
+.title {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+}
+
+.title h1 {
+  font-size: clamp(28px, 5vw, 54px);
+  letter-spacing: 12px;
+  color: #d9dcff;
+  text-shadow: 0 0 18px #777bff;
+}
+
+.title p {
+  margin-top: 12px;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #8d93b8;
+}
+
+.hint {
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #727998;
+  pointer-events: none;
+}
